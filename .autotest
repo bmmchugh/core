@@ -1,0 +1,10 @@
+Autotest.add_hook :initialize do |at|
+  at.add_mapping(%r%^test/java/(.*Test)\.java$%) do |filename, m|
+    filename
+  end
+  at.add_mapping(%r%^java/(.*)\.java%) do |filename, m|
+    [filename] +
+      at.files_matching(%r%test/java/#{m[1]}.*Test\.java$%) +
+      at.files_matching(%r%test/groovy/#{m[1]}.*Test\.groovy$%)
+  end
+end
