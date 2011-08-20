@@ -26,5 +26,4 @@ class TestCase {
             Assert.fail("No exception was expected but caught " + e)
         }
     }
-
 }
