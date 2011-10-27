@@ -503,7 +503,7 @@ public final class Verify {
      *     method
      * @see #equal(Object,Object)
      */
-    public static boolean notEqual(Object lhs, Object rhs) {
+    public static boolean notEqual(final Object lhs, final Object rhs) {
         return !Verify.equal(lhs, rhs);
     }
 }

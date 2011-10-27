@@ -24,11 +24,11 @@ package com.frdna.core;
 public class XmlException extends RuntimeException {
     private static final long serialVersionUID = 5082826840122372065L;
 
-    public XmlException(String message) {
+    public XmlException(final String message) {
         super(message);
     }
 
-    public XmlException(String message, Throwable cause) {
+    public XmlException(final String message, final Throwable cause) {
         super(message, cause);
     }
 }

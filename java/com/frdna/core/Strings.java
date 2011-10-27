@@ -692,7 +692,7 @@ public final class Strings {
      *     <code>value</code> right padded with spaces
      * @see #leftJustify(CharSequence,Character,Number)
      */
-    public static String padRight(CharSequence value, int length) {
+    public static String padRight(final CharSequence value, final int length) {
         return Strings.leftJustify(value, ' ', length);
     }
 }

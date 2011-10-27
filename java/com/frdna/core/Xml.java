@@ -55,7 +55,7 @@ public final class Xml {
         try {
             DocumentBuilder builder = dbf.newDocumentBuilder();
             builder.setErrorHandler(new DefaultHandler() {
-                public void fatalError(SAXParseException e) {
+                public void fatalError(final SAXParseException e) {
                 }
             });
             Document doc =
@@ -72,7 +72,7 @@ public final class Xml {
         return false;
     }
 
-    private static void throwXmlException(Exception cause) {
+    private static void throwXmlException(final Exception cause) {
         throw new XmlException("Unable to parse the XML", cause);
     }
 }
