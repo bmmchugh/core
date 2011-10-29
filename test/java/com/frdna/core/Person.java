@@ -26,7 +26,7 @@ public class Person {
     private String firstName = null;
     private String lastName = null;
 
-    public void setFirstName(String firstName) {
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
@@ -34,7 +34,7 @@ public class Person {
         return this.firstName;
     }
 
-    public void setLastName(String lastName) {
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
